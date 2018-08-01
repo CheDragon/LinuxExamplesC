@@ -4,13 +4,12 @@
 MODULE_LICENSE("GPL");
 
 static int hello_init(void){
-  printf(KERN_DEBUG "Hello World!\n");
+  printk(KERN_DEBUG "Hello World!\n");
   return 0;
 }
 
 static void hello_exit(void){
-  printf(KERN_DEBUG "Goodbye World!\n");
-  return 0;
+  printk(KERN_DEBUG "Goodbye World!\n");
 }
 
 module_init(hello_init);
