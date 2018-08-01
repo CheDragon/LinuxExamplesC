@@ -1,6 +1,6 @@
 #include <linux/intit.h>
 #include <linux/module.h>
-#include <linux/moduleparams.h>
+#include <linux/moduleparam.h>
 
 MODULE_LICENSE("GPL");
 
