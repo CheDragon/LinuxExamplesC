@@ -11,3 +11,7 @@ Check outcome with dmesg
 Uninstall with sudo rmmod mod_a
 
 Check outcome with dmesg
+
+Install then mod_b using the same procedure (Edit Makefile before)
+
+Check the result with dmesg
