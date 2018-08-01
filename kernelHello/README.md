@@ -1,6 +1,6 @@
 # KernelModule
 
-To run this run the command:
+To install this module, get it ready with run the command:
 make -C [headers location] M=$(pwd) modules
 
 Install module with:
