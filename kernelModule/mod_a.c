@@ -1,4 +1,4 @@
-#include <linux/intit.h>
+#include <linux/init.h>
 #include <linux/module.h>
 #include <linux/moduleparam.h>
 
@@ -16,7 +16,7 @@ static int module_a_init(void){
 }
 
 static void module_a_exit(void){
-  printfk(KERN_DEBUG "Module a removed\n");
+  printk(KERN_DEBUG "Module a removed\n");
 }
 
 int add_values(void){
@@ -26,4 +26,4 @@ int add_values(void){
 EXPORT_SYMBOL_GPL(add_values);
 
 module_init(module_a_init);
-module_init(module_a_exit);
+module_exit(module_a_exit);
